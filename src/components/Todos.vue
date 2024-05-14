@@ -46,7 +46,7 @@ function deleteTodo(id: string) {
     <ul>
       <li 
         v-for="todo in todos" 
-        :key="todo.id"> 
+        :key="todo.id"
         @click="deleteTodo(todo.id)"              
       >
         {{ todo.content }}
